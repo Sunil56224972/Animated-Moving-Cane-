@@ -1,6 +1,5 @@
 import { shaderMaterial } from "@react-three/drei";
 import { extend } from "@react-three/fiber";
-import { Vector2 } from "three";
 import { noise } from "./Noise";
 
 export const BackgroundMaterial = shaderMaterial(

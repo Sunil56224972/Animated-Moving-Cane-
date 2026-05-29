@@ -4,7 +4,7 @@ Author: Sunil (https://github.com/Sunil56224972)
 Title: Energy Drink Game Ready Model
 */
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { Color, Vector2 } from "three";
@@ -46,6 +46,7 @@ const Model = (props) => {
         ),
       },
     }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [colors]
   );
 
@@ -164,6 +165,7 @@ const Model = (props) => {
         `
       );
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [uniforms]);
 
   return (
